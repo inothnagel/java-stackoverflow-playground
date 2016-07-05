@@ -22,7 +22,9 @@ public class SortDoubleArrayWithStringAndInt {
         Arrays.sort(data, new Comparator<String[]>() {
             @Override
             public int compare(String[] o1, String[] o2) {
-                return Integer.valueOf(o1[1]) - Integer.valueOf(o2[1]);
+//                return Integer.valueOf(o1[1]) - Integer.valueOf(o2[1]);
+                return Integer.valueOf(o2[1]).compareTo(Integer.valueOf(o1[1]));
+
             }
         });
 
@@ -37,6 +39,6 @@ public class SortDoubleArrayWithStringAndInt {
     }
 
     public void sort() {
-        Arrays.sort(this.data, (o1, o2) -> Integer.valueOf(o1[1]) - Integer.valueOf(o2[1]));
+        Arrays.sort(this.data, (o1, o2) -> Integer.valueOf(o2[1]).compareTo(Integer.valueOf(o1[1])));
     }
 }

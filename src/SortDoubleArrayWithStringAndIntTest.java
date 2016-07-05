@@ -18,10 +18,10 @@ public class SortDoubleArrayWithStringAndIntTest {
         };
 
         String[][] expectedData = {
-                {"first", "1"},
-                {"second", "2"},
-                {"third", "3"},
                 {"fourth", "4"},
+                {"third", "3"},
+                {"second", "2"},
+                {"first", "1"},
         };
 
         SortDoubleArrayWithStringAndInt sorter = new SortDoubleArrayWithStringAndInt(data);
